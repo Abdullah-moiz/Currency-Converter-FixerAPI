@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&family=Raleway:ital,wght@1,600&family=Roboto+Mono:wght@500&family=Uchen&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cormorant SC';
+    background-color: var(--secondary);
+    color: var(--primary);
+    line-height: 1.6;
+}
+
+:root {
+    --primary: #f1faee;
+    --alert: #e63946;
+    --success: #80ed99;
+    --secondary: #1d3557;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    padding: 5px;
+}
+.btn
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+    margin: 10px;
+    border: 2px solid var(--success);
+    background: none;
+    cursor: pointer;
+    width: 200px;
+    color: var(--success);
+    font-size: x-large;
+    font-weight: 600;
+}
+.btn:hover
+{
+    background-color: var(--success);
+    color: var(--secondary);
+    transition: all 0.7s;
+}
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    height: 30%;
+    /* border: 2px solid red; */
+    margin-bottom: 20px;
+}
+
+.intro>h1 {
+    font-size: 3rem;
+}
+
+.intro>p {
+    font-size: 1rem;
+}
+
+.intro>p>a {
+    color: var(--success);
+    font-size: 1.5rem;
+}
+
+.currency-converter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+    /* border: 2px solid red; */
+    padding: 10px;
+    text-align: center;
+    box-shadow: 1px 10px 30px 10px #646464;;
+}
+footer{
+    background-color: black;
+    padding: 10px;
+    margin-top:20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    /* border: 2px solid red; */
+}
+
+.form-data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+
+.form-data>h1 {
+    font-size: 2rem;
+    margin: 5px;
+    padding: 5px;
+}
+
+.currency-code {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.input-y {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 80px;
+    padding: 5px;
+    margin: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    outline: none;
+    background: transparent;
+    border: 2px solid var(--success);
+    color: var(--success);
+    font-size: large;
+    font-weight: bold;
+}
+
+.input-x {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 80px;
+    padding: 5px;
+    margin: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    outline: none;
+    background: transparent;
+    border: 2px solid var(--success);
+    color: var(--success);
+    font-size: large;
+    font-weight: bold;
+}
+
+.output-data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    /* border: 3px solid red; */
+}
+
+.exchange-rate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+}
+
+.exchange-rate>h1 {
+    font-size: x-large;
+    font-weight: bolder;
+    padding: 5px;
+    margin: 5px;
+}
+
+.amount-output {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+
+}
+
+.amount-output>h1 {
+    font-size: x-large;
+    font-weight: bolder;
+    padding: 5px;
+    margin: 5px;
+}

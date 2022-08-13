@@ -1,0 +1,58 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="intro">
+            <h1>Welcome To our Currency Converter</h1>
+            <p>we are using Free Fixer API to provide latest Conversion Rates</p>
+            <p>Make Sure to try Sign Up on <a href="https://fixer.io/" target="_blank">FIXER API's</a> and grab your Own
+                Free API's KEY</p>
+        </div>
+        <div class="currency-converter">
+            <div class="input-data">
+                <form class="form-data" action="/Convertit" method="post">
+                    <h1>Convert Currency</h1>
+                    <div class="currency-code">
+                        <input class="input-y" name="from" type="text" required placeholder="PKR">
+                        <h1>To</h1>
+                        <input class="input-y" name="to" type="text" required placeholder="USD">
+                    </div>
+                    <h1>Enter Amount</h1>
+                    <input class="input-x" name="amount" type="number" required min="1" placeholder="5000">
+                    <button type="submit" class="btn">Convert</button>
+                </form>
+            </div>
+            <% if(data!=null){%>
+            <div class="output-data">
+                <div class="exchange-rate">
+                    <h1>Exchange Rate</h1>
+                    <h1>:</h1>
+                    <h1><%=data.info.rate%></h1>
+                </div>
+                <div class="amount-output">
+                    <h1>Result</h1>
+                    <h1>:</h1>
+                    <h1><%=data.result%></h1>
+                </div>
+            </div>
+            <%}else{%>
+                <div class="output-data">
+                    <h1 style="color: yellow ;">Kindly Enter Right Currency code <span style="color: red;">pkr for Pakistan</span> </h1>
+                </div>
+            <%}%>
+        </div>
+        <footer>
+            <h1>&copy; Developer Abdullah Moiz</h1>
+        </footer>
+    </div>
+</body>
+
+</html>
